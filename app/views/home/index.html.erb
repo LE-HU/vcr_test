@@ -1,0 +1,23 @@
+<% if flash[:notice] %>
+  <h1 class="notice"><%= flash[:notice] %></h1>
+<% end %>
+
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<%= @pokes %>
+
+<hr>
+<hr>
+
+<%= @pokes2 %>
+
+<% if false %>
+<%= @pokes.each do |poke| %>
+  <p>
+  <% byebug %>
+  <%= poke.url %>
+    <%# <%= image_tag(poke.url) %> %>
+  </p>
+<% end %>
+<% end %>
