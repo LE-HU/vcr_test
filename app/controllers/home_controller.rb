@@ -1,8 +1,7 @@
 class HomeController < ApplicationController
   def index
     flash.now[:notice] = 'Request sent!'
-    @pokes = PokeGetter.get_pokes_list
 
-    @pokes2 = PokeGetter.get_poke
+    @pokes = PokeGetter.get_pokes_image_url
   end
 end
