@@ -6,6 +6,10 @@
 
 <% @pokes.each do |sprite_url| %>
   <p>
-    <%= image_tag sprite_url, style: "float: left;"  %>
+    <% if sprite_url %>
+      <%= image_tag sprite_url, style: "float: left;"  %>
+    <% else %>
+      No artwork available
+    <% end %>
   </p>
 <% end %>
